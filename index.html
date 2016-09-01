@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>
+	</title>
+	<style>
+		#over3 {
+			border:yellow solid 1px;
+			background-color:yellow;
+			width:150px;
+
+		}
+		#over1 {
+			border: solid 1px;
+			width:150px;
+			height:10px;
+		}
+		#over2 {
+			background-color:green;
+			width:150px;
+			height:10px;
+		}
+		#over5 {
+			border: solid 1px;
+			width:150px;
+			height:10px;
+		}
+		#over4 {
+			background-color:black;
+			width:30px;
+			height:25px;
+		}
+	</style>
+	<script>
+	function myFunction() {
+    document.getElementById("demo").innerHTML = "Կտտցրաց դիվ";
+}
+function mamFunction() {
+    var obect=document.getElementById("over1").style.backgroundColor ="yellow";
+}
+function mamaFunction() {
+    var object=document.getElementById("over2")
+	object.style.backgroundColor ="yellow";
+	object.style.border ="solid 1px";
+	object.style.width ="200px";
+	object.style.height ="50px";
+}
+function mamamaFunction() {
+    var objectt=document.getElementById("over2")
+	objectt.style.backgroundColor ="green";
+	objectt.style.border ="solid 1px";
+	objectt.style.width ="150px";
+	objectt.style.height ="10px";
+}
+function papFunction() {
+    var objec=document.getElementById("over5");
+	objec.style.backgroundColor ="yellow";
+	objec.style.border ="solid 1px";
+	objec.style.width ="200px";
+	objec.style.height ="50px";
+}
+function papaFunction() {
+    var objec=document.getElementById("over5");
+	objec.style.backgroundColor ="#ffffff";
+	objec.style.border ="solid 1px";
+	objec.style.width ="150px";
+	objec.style.height ="10px";
+}</script>
+</head>
+<body>
+	<p>Վարժ 1<p>
+	<div id="over3"><p id="demo" onclick="myFunction()">Դիվ</p></div>
+	<p>Վարժ 2<p>
+	<div id="over1" onclick="mamFunction()"></div>
+	<p>Վարժ 3<p>
+	<div id="over2" onmouseover="mamaFunction()" onmouseout="mamamaFunction()"></div>
+	<p>Վարժ 4<p>
+	<div id="over4" onclick="papFunction()"></div>
+	<div id="over5"></div>
+</body>
+</html>
